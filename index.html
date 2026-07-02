@@ -50,63 +50,136 @@
         /* Navigation */
         nav {
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .nav-container {
+        .nav-top {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 0.75rem 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            border-bottom: 1px solid #f0f0f0;
         }
 
         .logo {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 800;
+            white-space: nowrap;
         }
 
-        .logo .free {
-            color: #F5A623;
-        }
+        .logo .free { color: #F5A623; }
 
         .logo .cell {
             color: white;
             background: #F5A623;
-            padding: 0.4rem 0.8rem;
-            border-radius: 8px;
+            padding: 0.35rem 0.8rem;
+            border-radius: 6px;
+            margin-left: 2px;
         }
+
+        .nav-cta a {
+            background: #F5A623;
+            color: white;
+            padding: 0.5rem 1.1rem;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .nav-bottom::-webkit-scrollbar { display: none; }
 
         .nav-links {
             display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
+            gap: 0;
             list-style: none;
+            min-width: max-content;
         }
 
         .nav-links a {
             cursor: pointer;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s;
-            color: #333;
-            text-decoration: none;
+            padding: 0.75rem 1.1rem;
+            display: block;
             font-size: 14px;
+            font-weight: 600;
+            color: #555;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+            transition: all 0.2s;
         }
 
-        .nav-links a:hover {
-            background: #fff8e6;
-            color: #F5A623;
-        }
+        .nav-links a:hover { color: #F5A623; }
 
         .nav-links a.active {
+            color: #F5A623;
+            border-bottom-color: #F5A623;
+        }
+
+        /* Floating button */
+        .float-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 16px;
             background: #F5A623;
             color: white;
+            border-radius: 50px;
+            padding: 0.75rem 1.2rem;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(245,166,35,0.4);
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            animation: pulse 2s infinite;
         }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 16px rgba(245,166,35,0.4); }
+            50% { box-shadow: 0 4px 24px rgba(245,166,35,0.7); }
+        }
+
+        /* Sticky bottom bar */
+        .sticky-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #d4880a;
+            z-index: 199;
+        }
+
+        .sticky-bottom a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 1rem;
+        }
+
+        body { padding-bottom: 60px; }
 
         /* Container */
         .container {
@@ -381,10 +454,15 @@
 
     <!-- Navigation -->
     <nav>
-        <div class="nav-container">
+        <div class="nav-top">
             <div class="logo">
-                <span class="free">프리셀리</span> <span class="cell">영어회화</span>
+                <span class="free">프리셀리</span><span class="cell">영어회화</span>
             </div>
+            <div class="nav-cta">
+                <a href="https://naver.me/5Z1fPkTC" target="_blank">📋 무료수업 신청</a>
+            </div>
+        </div>
+        <div class="nav-bottom">
             <ul class="nav-links">
                 <li><a onclick="switchTab('home')" class="active">홈</a></li>
                 <li><a onclick="switchTab('target')">대상</a></li>
@@ -394,6 +472,14 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Floating button -->
+    <a href="tel:010-2069-1741" class="float-btn">📞 전화상담</a>
+
+    <!-- Sticky bottom bar -->
+    <div class="sticky-bottom">
+        <a href="https://naver.me/5Z1fPkTC" target="_blank">📋 30분 무료수업 신청하기</a>
+    </div>
 
     <!-- Home -->
     <div id="home" class="section active">
