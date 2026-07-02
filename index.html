@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리셀리 영어회화 | 리터니·유학준비생 전문 1:1 영어</title>
+    <meta name="description" content="귀국학생(리터니)과 유학 예정 학생을 위한 1:1 맞춤 영어회화. 영어 실력 유지·향상, 유학 영어 준비, 원어민급 영어회화 전문. 무료 테스트 수업 제공.">
+    <meta name="keywords" content="리터니 영어, 리터니 영어회화, 귀국학생 영어, 유학준비 영어회화, 유학 영어, 영어회화 과외, 1대1 영어회화, 비대면 영어회화, 온라인 영어회화, 리터니 과외, 귀국학생 과외, 유학생 영어, 영어 말하기, 영어 스피킹, 영어회화 전문">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="프리셀리 영어회화">
+    <link rel="canonical" href="https://english.freecellery.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="프리셀리 영어회화 | 리터니·유학준비생 전문">
+    <meta property="og:description" content="귀국학생과 유학 예정 학생을 위한 1:1 맞춤 영어회화. 무료 테스트 수업 신청 가능.">
+    <meta property="og:url" content="https://english.freecellery.com">
+    <meta property="og:site_name" content="프리셀리 영어회화">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "프리셀리 영어회화",
+      "url": "https://english.freecellery.com",
+      "telephone": "010-2069-1741",
+      "description": "귀국학생(리터니)과 유학 준비생을 위한 1:1 맞춤 영어회화 전문.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "영어회화 서비스",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "리터니 영어회화"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "유학준비 영어회화"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "1:1 영어 스피킹"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "영어 면접 준비"}}
+        ]
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logo .free {
+            color: #F5A623;
+        }
+
+        .logo .cell {
+            color: white;
+            background: #F5A623;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .nav-links a {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            background: #fff8e6;
+            color: #F5A623;
+        }
+
+        .nav-links a.active {
+            background: #F5A623;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #d4880a;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #F5A623;
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #d4880a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #F5A623 0%, #f7c05a 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero .subtitle {
+            font-size: 18px;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero .tags {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.25);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-white {
+            background: white;
+            color: #F5A623;
+        }
+
+        .btn-white:hover {
+            background: #fff8e6;
+        }
+
+        .btn-dark {
+            background: #d4880a;
+            color: white;
+        }
+
+        .btn-dark:hover {
+            background: #b8750a;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(245,166,35,0.2);
+            transform: translateY(-4px);
+            border-color: #F5A623;
+        }
+
+        /* Target section */
+        .target-card {
+            background: linear-gradient(135deg, #fff8e6, #fff);
+            border: 2px solid #F5A623;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .target-icon {
+            font-size: 48px;
+            margin-bottom: 1rem;
+        }
+
+        /* Feature grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            background: #fff8e6;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #F5A623;
+        }
+
+        .feature-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #F5A623;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Process steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: #F5A623;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        /* Review */
+        .review-card {
+            background: #fff8e6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #F5A623;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 1rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .tab:hover { color: #F5A623; }
+
+        .tab.active {
+            color: #F5A623;
+            border-bottom-color: #F5A623;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #F5A623, #f7c05a);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #d4880a;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 24px; }
+            .hero .subtitle { font-size: 15px; }
+            h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="free">프리셀리</span> <span class="cell">영어회화</span>
+            </div>
+            <ul class="nav-links">
+                <li><a onclick="switchTab('home')" class="active">홈</a></li>
+                <li><a onclick="switchTab('target')">대상</a></li>
+                <li><a onclick="switchTab('program')">프로그램</a></li>
+                <li><a onclick="switchTab('process')">수업방식·후기</a></li>
+                <li><a onclick="switchTab('apply')">신청하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h1>프리셀리 영어회화</h1>
+                <p class="subtitle">리터니·유학 준비생을 위한 1:1 맞춤 영어회화</p>
+                <div class="tags">
+                    <span class="tag">✈️ 귀국학생(리터니) 전문</span>
+                    <span class="tag">🌍 유학 준비생 전문</span>
+                    <span class="tag">💻 비대면 수업 가능</span>
+                    <span class="tag">🎯 1:1 맞춤 수업</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청</a>
+                    <a href="tel:010-2069-1741" class="btn btn-dark">📞 전화하기</a>
+                </div>
+            </div>
+
+            <h2>이런 분들을 위한 수업이에요</h2>
+            <div class="grid">
+                <div class="target-card">
+                    <div class="target-icon">✈️</div>
+                    <h3>귀국학생 (리터니)</h3>
+                    <p>해외에서 돌아와 영어 실력이 떨어질까 걱정되시나요? 귀국 후에도 원어민급 영어를 유지할 수 있도록 도와드립니다.</p>
+                </div>
+                <div class="target-card">
+                    <div class="target-icon">🌍</div>
+                    <h3>유학 준비생</h3>
+                    <p>해외 학교 입학 전 영어 실력을 끌어올리고 싶으신가요? 현지 생활에 바로 적응할 수 있는 실전 영어를 준비해 드립니다.</p>
+                </div>
+                <div class="target-card">
+                    <div class="target-icon">📚</div>
+                    <h3>영어 실력 향상</h3>
+                    <p>스피킹, 리스닝, 에세이 라이팅까지 영어의 모든 영역을 균형 있게 향상시켜 드립니다.</p>
+                </div>
+            </div>
+
+            <h2>왜 프리셀리 영어회화인가요?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-number">01</div>
+                    <h3>리터니 전문 커리큘럼</h3>
+                    <p>귀국학생의 영어 수준에 맞는 맞춤 커리큘럼으로 빠르게 실력을 회복하고 향상시킵니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">02</div>
+                    <h3>유학 실전 영어</h3>
+                    <p>현지 학교생활, 친구 사귀기, 수업 참여까지 실제로 필요한 영어를 집중적으로 준비합니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">03</div>
+                    <h3>1:1 맞춤 수업</h3>
+                    <p>학생의 현재 수준과 목표에 맞게 수업 내용과 속도를 조절합니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">04</div>
+                    <h3>비대면 수업 가능</h3>
+                    <p>국내외 어디서든 온라인으로 편하게 수업 받을 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>무료 테스트 수업 받아보세요!</h3>
+                <p>부담 없이 선생님과 먼저 수업을 체험해 보세요.<br>수준 진단 후 맞춤 커리큘럼을 제안해 드립니다.</p>
+                <div class="btn-group" style="margin-top: 1.5rem;">
+                    <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청하기</a>
+                    <a href="tel:010-2069-1741" class="btn btn-dark">📞 010-2069-1741</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Target -->
+    <div id="target" class="section">
+        <div class="container">
+            <h2>수업 대상</h2>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchInnerTab(event, 'returnee', 'target')">귀국학생 (리터니)</div>
+                <div class="tab" onclick="switchInnerTab(event, 'studyabroad', 'target')">유학 준비생</div>
+            </div>
+
+            <div id="returnee" class="tab-content active">
+                <div class="grid">
+                    <div class="card">
+                        <h3>🏠 귀국 후 영어 유지</h3>
+                        <p>해외에서 귀국한 뒤 영어를 쓸 기회가 없어 실력이 떨어지는 경우가 많아요. 꾸준한 1:1 영어회화로 원어민급 실력을 유지합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📈 영어 레벨 업</h3>
+                        <p>이미 기본기가 있는 리터니 학생에게 맞는 고급 영어 표현, 뉘앙스, 어휘력을 집중적으로 향상시킵니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>✍️ 에세이·라이팅</h3>
+                        <p>학교 과제 에세이, 대입 에세이까지 영어 쓰기 실력을 체계적으로 키웁니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🗣️ 스피킹·발음 교정</h3>
+                        <p>발음, 억양, 자연스러운 표현을 다듬어 현지인처럼 말할 수 있도록 도와드립니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📖 영어 독해·문학</h3>
+                        <p>영어 원서 읽기, 문학 작품 분석 등 깊이 있는 영어 독해 능력을 키웁니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎓 국제학교 내신 관리</h3>
+                        <p>국제학교 영어 수업과 연계하여 내신 성적 향상까지 함께 관리합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studyabroad" class="tab-content">
+                <div class="grid">
+                    <div class="card">
+                        <h3>✈️ 유학 전 영어 준비</h3>
+                        <p>출국 전 영어 실력을 집중적으로 끌어올려 현지 학교에서 바로 적응할 수 있도록 준비합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏫 학교생활 영어</h3>
+                        <p>수업 참여, 친구 사귀기, 선생님과 대화 등 실제 학교생활에서 필요한 영어를 집중 훈련합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎤 인터뷰·면접 준비</h3>
+                        <p>해외 학교 입학 인터뷰 준비. 자기소개, 학교 선택 이유, 장단점 등을 영어로 자신 있게 말할 수 있도록 코칭합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📝 에세이 작성</h3>
+                        <p>입학 원서 에세이, 학교 과제 에세이를 체계적으로 준비합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌐 일상 영어 회화</h3>
+                        <p>쇼핑, 식당, 교통 등 현지 생활에서 바로 쓸 수 있는 실전 영어를 연습합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📊 영어 시험 준비</h3>
+                        <p>TOEFL, IELTS 등 영어 공인 시험 준비를 함께 도와드립니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>어떤 수업이 맞는지 모르겠다면?</h3>
+                <p>무료 테스트 수업으로 현재 수준을 파악하고 맞춤 커리큘럼을 제안해 드려요.</p>
+                <div class="btn-group" style="margin-top: 1.5rem;">
+                    <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청</a>
+                    <a href="tel:010-2069-1741" class="btn btn-dark">📞 010-2069-1741</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Program -->
+    <div id="program" class="section">
+        <div class="container">
+            <h2>수업 프로그램</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">🗣️</div>
+                    <h3>영어 스피킹 집중</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">리터니 · 유학 준비생</p>
+                    <p>자연스러운 영어 말하기를 목표로 실생활 표현, 발음, 억양을 집중 훈련합니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>원어민 표현 & 슬랭</li>
+                        <li>발음 & 억양 교정</li>
+                        <li>주제별 자유 토론</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">✍️</div>
+                    <h3>영어 라이팅 & 에세이</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">리터니 · 입학 준비</p>
+                    <p>학교 과제부터 입학 에세이까지 영어 글쓰기를 체계적으로 지도합니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>에세이 구조 & 논리 구성</li>
+                        <li>문법 & 어휘 향상</li>
+                        <li>첨삭 & 피드백</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">🎤</div>
+                    <h3>인터뷰 & 면접 코칭</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">유학 준비생</p>
+                    <p>해외 학교 입학 인터뷰를 실전처럼 준비합니다. 모의 면접으로 자신감을 키웁니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>자기소개 & 스토리텔링</li>
+                        <li>예상 질문 & 답변 준비</li>
+                        <li>모의 인터뷰 연습</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">📖</div>
+                    <h3>영어 독해 & 리스닝</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">전 레벨</p>
+                    <p>영어 원서 읽기, 영어 뉴스 듣기 등으로 독해력과 리스닝 능력을 동시에 향상합니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>영어 원서 독해</li>
+                        <li>영어 뉴스 & 팟캐스트</li>
+                        <li>어휘력 확장</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">🌐</div>
+                    <h3>생활 영어 집중</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">유학 준비생</p>
+                    <p>현지 생활에서 바로 쓰이는 실전 영어를 상황별로 집중 훈련합니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>학교생활 영어</li>
+                        <li>쇼핑 & 일상 영어</li>
+                        <li>친구 사귀기 표현</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 36px; margin-bottom: 1rem;">📊</div>
+                    <h3>영어 시험 준비</h3>
+                    <p style="color: #F5A623; font-weight: 600; margin-bottom: 0.5rem;">전 레벨</p>
+                    <p>TOEFL, IELTS, SAT 등 영어 공인시험을 체계적으로 준비합니다.</p>
+                    <ul style="padding-left: 1.2rem; color: #555; margin-top: 0.5rem;">
+                        <li>TOEFL / IELTS</li>
+                        <li>SAT Reading & Writing</li>
+                        <li>모의고사 & 분석</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>어떤 프로그램이 맞는지 모르겠다면?</h3>
+                <p>무료 테스트 수업으로 현재 수준을 진단하고 딱 맞는 프로그램을 추천해 드려요!</p>
+                <div class="btn-group" style="margin-top: 1.5rem;">
+                    <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청</a>
+                    <a href="tel:010-2069-1741" class="btn btn-dark">📞 010-2069-1741</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process & Reviews -->
+    <div id="process" class="section">
+        <div class="container">
+            <h2>수업방식 · 후기</h2>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchInnerTab(event, 'how', 'process')">수업 방식</div>
+                <div class="tab" onclick="switchInnerTab(event, 'reviews', 'process')">후기</div>
+            </div>
+
+            <div id="how" class="tab-content active">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3>무료 테스트 수업</h3>
+                        <p>부담 없이 선생님과 첫 수업을 체험해 보세요. 현재 영어 수준을 파악합니다.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3>수준 진단 & 목표 설정</h3>
+                        <p>테스트 후 학생의 수준과 목표에 맞는 맞춤 커리큘럼을 제안합니다.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3>1:1 맞춤 수업 시작</h3>
+                        <p>전담 선생님과 1:1 수업을 시작합니다. 온라인·오프라인 모두 가능합니다.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h3>정기 피드백</h3>
+                        <p>수업 후 부모님께 학습 현황과 발전 사항을 꼼꼼히 보고해 드립니다.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">05</div>
+                        <h3>목표 달성</h3>
+                        <p>꾸준한 관리로 영어 실력 향상과 목표를 함께 이뤄 나갑니다.</p>
+                    </div>
+                </div>
+
+                <div style="background: #fff8e6; padding: 2rem; border-radius: 12px; margin-top: 1rem;">
+                    <h3>수업 기본 정보</h3>
+                    <p>📍 <strong>수업 방식:</strong> 온라인(Zoom·Google Meet) / 오프라인 방문</p>
+                    <p>⏰ <strong>수업 시간:</strong> 학생 일정에 맞게 협의</p>
+                    <p>📅 <strong>수업 횟수:</strong> 주 1~3회 (학생 목표에 따라 조정)</p>
+                    <p>📞 <strong>상담 문의:</strong> 010-2069-1741 | 신청 후 24시간 이내 연락</p>
+                </div>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <div class="grid">
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"미국에서 귀국한 후 영어를 안 쓰게 되어 걱정이었는데, 프리셀리 영어회화 덕분에 귀국 후에도 영어 실력을 그대로 유지하고 있어요. 선생님이 리터니 특성을 잘 이해해 주세요."</p>
+                        <p><strong>— 귀국학생 학부모님</strong></p>
+                    </div>
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"싱가포르로 유학을 준비하면서 영어 인터뷰가 너무 걱정됐어요. 모의 인터뷰 연습을 반복하고 나니 실전에서 자신 있게 말할 수 있었어요. 합격했습니다!"</p>
+                        <p><strong>— 유학 준비생 학부모님</strong></p>
+                    </div>
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"아이가 해외에서 영어로 수업받다가 귀국 후 한국 학교를 다니면서 영어를 거의 안 쓰게 됐는데, 수업 후 영어 자신감이 다시 살아났어요."</p>
+                        <p><strong>— 초등학생 리터니 학부모님</strong></p>
+                    </div>
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"미국 유학 출국 2달 전부터 집중적으로 수업했는데, 현지 도착 후 친구들이랑 대화하는 게 생각보다 훨씬 자연스러웠어요. 선생님 덕분이에요!"</p>
+                        <p><strong>— 미국 유학 중인 학생</strong></p>
+                    </div>
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"온라인 수업인데도 집중력 있게 진행해 주셔서 너무 만족해요. 해외 거주 중인데 시간대 맞춰서 수업해 주셔서 감사합니다."</p>
+                        <p><strong>— 해외 거주 학부모님</strong></p>
+                    </div>
+                    <div class="review-card">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"에세이 쓰는 법을 몰라서 고민이었는데 구조 잡는 법부터 차근차근 알려주셔서 이제 혼자서도 에세이를 쓸 수 있게 됐어요."</p>
+                        <p><strong>— 리터니 고등학생</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply -->
+    <div id="apply" class="section">
+        <div class="container">
+            <h2>무료 테스트 수업 신청</h2>
+
+            <div style="text-align: center; padding: 3rem 1rem;">
+                <div style="font-size: 64px; margin-bottom: 1.5rem;">📋</div>
+                <h3 style="font-size: 24px; margin-bottom: 1rem;">아래 버튼을 눌러 신청서를 작성해 주세요</h3>
+                <p style="color: #666; margin-bottom: 2rem;">신청 후 <strong>24시간 이내</strong>에 전화 또는 문자로 연락드립니다.</p>
+                <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark" style="font-size: 18px; padding: 1rem 2.5rem;">📋 무료 테스트 수업 신청하기</a>
+                <p style="margin-top: 2rem; color: #666;">또는 전화로 바로 문의하세요</p>
+                <a href="tel:010-2069-1741" style="font-size: 22px; font-weight: 700; color: #F5A623; text-decoration: none; display: block; margin-top: 0.5rem;">📞 010-2069-1741</a>
+            </div>
+
+            <div style="background: #fff8e6; padding: 2rem; border-radius: 12px; max-width: 600px; margin: 0 auto;">
+                <h3>신청 시 알려주시면 좋은 것들</h3>
+                <p>✅ 현재 학년 및 학교</p>
+                <p>✅ 리터니 or 유학 준비 중 여부</p>
+                <p>✅ 영어 수준 (간단하게 말씀해 주세요)</p>
+                <p>✅ 원하는 수업 목표</p>
+                <p>✅ 선호하는 수업 방식 (온라인/오프라인)</p>
+                <p style="margin-top: 1rem; font-size: 13px; color: #999;">* 신청 후 24시간 이내에 연락드립니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>📞 <a href="tel:010-2069-1741">010-2069-1741</a></p>
+        <p style="margin-top: 0.75rem;">온라인 수업 | 리터니·유학 준비생 전문 | 상담 24시간 가능</p>
+        <p style="margin-top: 1rem; font-size: 12px;">© 2026 프리셀리 영어회화. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchTab(tabName) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function switchInnerTab(e, tabName, sectionId) {
+            const section = document.getElementById(sectionId);
+            section.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            section.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            e.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
