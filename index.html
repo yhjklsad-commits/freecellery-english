@@ -451,6 +451,32 @@
             .hero .subtitle { font-size: 15px; }
             h2 { font-size: 22px; }
         }
+
+        /* Study abroad guide (shared with freecellery.com) */
+        .callout {
+            background: #fff8e6;
+            border-left: 4px solid #F5A623;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .callout .eyebrow { color: #d4880a; font-weight: 700; font-size: 13px; margin-bottom: 0.5rem; }
+
+        .promo-box { background: #2b2118; color: white; border-radius: 16px; padding: 2rem; margin-bottom: 2rem; }
+        .promo-badge { display: inline-block; background: #F5A623; color: white; border-radius: 20px; padding: 0.3rem 0.9rem; font-size: 12px; font-weight: 700; margin-bottom: 1rem; }
+        .promo-box h3 { color: white; }
+        .promo-box .price { color: #ffd166; font-weight: 700; font-size: 18px; margin: 0.5rem 0; }
+
+        .compare-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; background: white; }
+        .compare-table th, .compare-table td { border: 1px solid #eee; padding: 0.9rem; font-size: 14px; text-align: left; vertical-align: top; }
+        .compare-table th { background: #d4880a; color: white; }
+
+        .guide-block { border-left: 3px solid #F5A623; padding-left: 1.2rem; margin-bottom: 1.5rem; }
+        .guide-block h4 { color: #d4880a; margin-bottom: 0.4rem; font-size: 16px; }
+
+        .faq-item { border-bottom: 1px solid #eee; padding: 1.1rem 0; }
+        .faq-item h4 { color: #d4880a; margin-bottom: 0.5rem; font-size: 15px; }
+        .faq-item h4::before { content: "Q. "; color: #F5A623; }
     </style>
 </head>
 <body>
@@ -470,6 +496,7 @@
                 <li><a onclick="switchTab('home')" class="active">홈</a></li>
                 <li><a onclick="switchTab('target')">대상</a></li>
                 <li><a onclick="switchTab('program')">프로그램</a></li>
+                <li><a onclick="switchTab('study')">유학</a></li>
                 <li><a onclick="switchTab('process')">수업방식·후기</a></li>
                 <li><a onclick="switchTab('apply')">신청하기</a></li>
                 <li><a onclick="switchTab('news')">뉴스</a></li>
@@ -502,6 +529,14 @@
                     <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청</a>
                     <a href="https://open.kakao.com/o/sjuonfCi" target="_blank" class="btn btn-dark">💬 카카오 상담</a>
                     <a href="tel:010-2069-1741" class="btn btn-dark">📞 전화하기</a>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>✈️ 2027 겨울캠프·유학 신청 받고 있어요</h3>
+                <p>캐나다·일본·뉴질랜드 겨울캠프부터 조기유학·보딩스쿨 입학까지, 유학 정보와 신청은 유학 메뉴에서 바로 확인하세요.</p>
+                <div class="btn-group" style="margin-top: 1.5rem;">
+                    <a href="javascript:void(0)" onclick="switchTab('study')" class="btn btn-white">🌍 유학신청 바로가기 →</a>
                 </div>
             </div>
 
@@ -748,6 +783,123 @@
                     <a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-white">📋 무료 테스트 수업 신청</a>
                     <a href="https://open.kakao.com/o/sjuonfCi" target="_blank" class="btn btn-dark">💬 카카오 상담</a>
                     <a href="tel:010-2069-1741" class="btn btn-dark">📞 010-2069-1741</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Abroad -->
+    <div id="study" class="section">
+        <div class="container">
+            <h2>유학</h2>
+
+            <!-- Winter Camp Promotion -->
+            <div class="promo-box">
+                <span class="promo-badge">🎪 모집 중</span>
+                <h3 style="font-size: 22px;">2027 겨울캠프 모집 시작합니다</h3>
+                <p style="color: #cbd5e1;">🇨🇦 캐나다 3주·7주 (나이아가라폭포·온타리오 / 정규과정 체험 / 홈스테이·아이비리그 대학 탐방)<br>
+                🇯🇵 일본 2주 (교토·오사카 / 정규 학교 체험 / 일본어 학습)<br>
+                🇳🇿 뉴질랜드 3주·4주·7주 (오클랜드 와이우쿠 지역 / Waiuku College / 남반구 여름 방학)</p>
+                <p class="price">캐나다 3주 890만원 · 7주 1,290만원 · 일본 2주 594만원 · 뉴질랜드 3주 690만원·4주 810만원·7주 1,090만원 (항공료 별도)</p>
+                <p style="color: #cbd5e1; font-size: 13px;">초등 4학년~고등 2학년 대상 · 정원 조기 마감될 수 있습니다 · 주관: 쏠루트유학</p>
+                <a href="tel:010-2069-1741" class="btn btn-dark" style="margin-top: 1rem;">캠프 자세히 보기·신청하기 →</a>
+            </div>
+
+            <div class="callout">
+                <p class="eyebrow">🎓 한국 대학도 생각하신다면</p>
+                <h3>재외국민 특례입학 총정리</h3>
+                <p>3년 특례·12년 특례는 자격 요건(재학·거주 기간)이 다르고, 국어·영어·수학 필기시험 준비법과 국제학교·외국인학교의 학력 인정 문제까지 함께 확인해야 합니다. 특례는 출국·귀국 시점이 자격을 좌우하기 때문에, 미리 계산해두지 않으면 자격 자체가 사라질 수 있습니다. 프리셀리 영어회화의 유학 준비생 수업은 이 특례 시험의 국어·영어 대비까지 함께 지도합니다.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card"><p style="color:#d4880a; font-weight:700; font-size:12px;">미국</p><h3>미국 보딩스쿨·국제학교 입학</h3><p>학교 선정·지원 서류·에세이·면접(인터뷰) 준비를 1:1로 컨설팅합니다.</p></div>
+                <div class="card"><p style="color:#d4880a; font-weight:700; font-size:12px;">영국</p><h3>영국 보딩스쿨 입학</h3><p>명문 보딩스쿨 지원, UKiset·면접·에세이 입학 준비를 지원합니다.</p></div>
+                <div class="card"><p style="color:#d4880a; font-weight:700; font-size:12px;">조기유학</p><h3>조기유학·국제학교 입학 준비</h3><p>입학 시험·영어 면접·에세이까지 입학 조건에 맞춘 준비를 진행합니다.</p></div>
+                <div class="card"><p style="color:#d4880a; font-weight:700; font-size:12px;">입학 컨설팅</p><h3>에세이·면접/인터뷰 준비</h3><p>국제학교·보딩스쿨 입학 에세이 첨삭 및 영어 인터뷰 1:1 코칭을 진행합니다.</p></div>
+            </div>
+
+            <p style="color: #d4880a; font-weight: 700; font-size: 13px; letter-spacing: 1px; margin-top: 3rem;">STUDY ABROAD GUIDE</p>
+            <h2>유학, 무엇부터 알아보시나요</h2>
+            <p>어머님들이 가장 많이 물어보시는 것부터 순서대로 정리했습니다.</p>
+
+            <h3>단기유학·유학캠프·조기유학·어학연수, 뭐가 다른가요</h3>
+            <p>상담에서 이 넷을 같은 말처럼 쓰시는 분이 많은데, 목적과 기간이 완전히 다릅니다. 여기서부터 정리하고 시작하셔야 합니다.</p>
+            <div style="overflow-x: auto;">
+                <table class="compare-table">
+                    <tr><th>구분</th><th>기간</th><th>내용</th><th>학적</th></tr>
+                    <tr><td><strong>유학캠프(방학캠프)</strong></td><td>2~7주</td><td>겨울·여름 방학을 이용. 현지 학교 정규수업이나 어학원에 들어가고 홈스테이로 지냅니다. 목적은 경험과 동기부여.</td><td>한국 학교에 그대로 둡니다.</td></tr>
+                    <tr><td><strong>단기유학</strong></td><td>1학기~1년</td><td>현지 학교에 실제로 다니며 정규과정을 이수합니다.</td><td>한국 학교로 복학하는 것을 전제로 하며, 학교와 협의해 학적·학점 인정 여부를 미리 확인해야 합니다.</td></tr>
+                    <tr><td><strong>조기유학</strong></td><td>수년~졸업까지</td><td>현지에서 졸업하고 그 나라 대학을 목표로 합니다. 가장 큰 결정입니다.</td><td>재외국민 특례입학 자격까지 함께 계산해야 합니다.</td></tr>
+                    <tr><td><strong>어학연수</strong></td><td>어학원</td><td>정규 학교 수업이 아니라 영어(또는 일본어)만 배웁니다.</td><td>학점·내신과 무관하며, 순수하게 언어가 목적일 때 선택합니다.</td></tr>
+                </table>
+            </div>
+            <p><strong>선생님의 조언</strong> — 처음이시면 유학캠프(2~7주)부터 권합니다. 아이가 해외 생활을 견디는지, 영어 환경에서 위축되지 않는지 몇 백만원으로 먼저 확인할 수 있습니다. 이걸 안 해보고 바로 조기유학을 결정했다가 6개월 만에 돌아오는 경우를 여러 번 봤습니다.</p>
+
+            <h3 style="margin-top: 2.5rem;">학년별로 — 초등·중등·고등 언제 보내야 할까</h3>
+            <div class="guide-block">
+                <h4>초등 (초4~초6)</h4>
+                <p>영어를 스펀지처럼 흡수하는 시기입니다. 다만 한국어(국어)도 같이 자라야 할 때라, 오래 나가면 모국어와 정체성에 공백이 생길 수 있습니다. 이 나이대는 유학캠프(2~3주)로 경험만 시켜주는 것을 권합니다. 인솔자가 출국·귀국 모두 동행하는 프로그램을 고르세요.</p>
+            </div>
+            <div class="guide-block">
+                <h4>중등 · 중학생 (중1~중3)</h4>
+                <p>중학생이 가장 많이 보내는 시기입니다. 영어 습득력이 아직 좋고, 고교 내신이 시작되기 전이라 부담이 적습니다. 단기유학(1학기~1년)이나 7주 캠프가 잘 맞습니다. 조기유학을 생각하신다면 이 시기가 현실적인 마지노선입니다.</p>
+            </div>
+            <div class="guide-block">
+                <h4>고등 · 고등학생 (고1~고2)</h4>
+                <p>고등학생 유학은 가장 신중해야 합니다. 미국·캐나다는 고교 내신(GPA)이 4년 누적이라 이때 나가면 성적이 그대로 대입에 남습니다. 준비 없이 나가면 첫 학기 성적이 평생 따라옵니다. 반대로 재외국민 특례입학을 노린다면 재학 기간 요건을 정확히 계산해야 합니다.</p>
+            </div>
+            <div class="guide-block">
+                <h4>고3 이후</h4>
+                <p>학교 유학보다 대학 진학 준비가 핵심입니다. 미국은 SAT·원서에세이, 영국은 A-Level·UCAS, 일본은 EJU로 방향이 완전히 갈립니다.</p>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">나라별로 — 미국유학·캐나다유학·뉴질랜드·영국</h3>
+            <div class="grid">
+                <div class="card">
+                    <p style="color:#d4880a; font-weight:700; font-size:12px;">US</p><h3>미국유학</h3>
+                    <p>선택지가 가장 넓습니다(공립·사립·보딩스쿨·차터스쿨). 다만 유학생은 공립고에 재학 기간 제한이 있어, 부모 없이 가면 대개 사립·보딩으로 가야 합니다. GPA 4년 누적이라 가면 첫 학기 성적부터 빠짐없이 남습니다.</p>
+                </div>
+                <div class="card">
+                    <p style="color:#d4880a; font-weight:700; font-size:12px;">CA</p><h3>캐나다유학</h3>
+                    <p>공립교육청 유학이 가능해 비용이 합리적입니다. 안전하고 영주권·이민으로 연결되는 경로가 있어 교육이민 가정이 선호합니다. 다만 ESL 배치가 관건 — 배치 수준이 낮으면 학업 진도가 늦어집니다.</p>
+                </div>
+                <div class="card">
+                    <p style="color:#d4880a; font-weight:700; font-size:12px;">NZ</p><h3>뉴질랜드</h3>
+                    <p>안전·합리적 비용이 첫 유학으로 많이 갑니다. 한국이 겨울일 때 여름이라 겨울방학 캠프에 특히 인기가 높습니다. 오클랜드 와이우쿠 지역 Waiuku College는 ESOL 수업을 통해 영어 적응을 돕고 학년별 재학생과 함께 정규수업을 체험합니다.</p>
+                </div>
+                <div class="card">
+                    <p style="color:#d4880a; font-weight:700; font-size:12px;">GB</p><h3>영국</h3>
+                    <p>보딩스쿨 전통·명문의 장입니다. 이튼·해로우 등 명문 보딩스쿨의 자국입니다. 11+·13+ 입학시험이 있어 2~3년 전부터 준비해야 합니다. 준비 기간이 가장 긴 나라입니다.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">유학 가기 전, 반드시 준비해야 할 것</h3>
+            <div class="guide-block">
+                <h4>① 영어 — 회화가 아니라 "학업 영어"</h4>
+                <p>현지 학교는 거의 모든 과목을 에세이로 평가합니다. 회화가 유창해도 에세이 구조를 모르면 점수가 안 나옵니다. 캐나다처럼 레벨 테스트로 ESL 단계가 정해지는 경우, 이 시험 한 번이 이후 2~3년을 좌우합니다. 프리셀리 영어회화가 가장 집중적으로 준비시켜 드리는 부분입니다.</p>
+            </div>
+            <div class="guide-block">
+                <h4>② 학업 영어 못지않게 "생활 영어"</h4>
+                <p>시험 점수는 챙기지만, 도착 후 홈스테이·기숙사·친구 관계에서 바로 쓰이는 생활 표현을 놓치는 경우가 많습니다. 출국 전 생활영어 실전 연습을 함께 진행합니다.</p>
+            </div>
+            <div class="guide-block">
+                <h4>③ 학적·학력 인정</h4>
+                <p>단기유학이면 한국 학교와 학적 처리를 협의하고, 조기유학이면 학력 인정 여부와 특례 자격을 미리 계산하세요. 다녀온 뒤에는 되돌릴 수 없습니다.</p>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">유학 관련 자주 묻는 질문</h3>
+            <div class="faq-item"><h4>단기유학과 조기유학은 무엇이 다른가요?</h4><p>단기유학은 보통 1학기~1년간 현지 학교를 다니고 한국 학교로 복학하는 것을 전제로 합니다. 조기유학은 현지에서 졸업하고 그 나라 대학 진학을 목표로 하는 장기 계획입니다. 2~7주짜리 유학캠프는 방학을 이용한 체험으로, 학적은 한국 학교에 그대로 둡니다.</p></div>
+            <div class="faq-item"><h4>유학은 초등·중등·고등 중 언제 보내는 게 좋을까요?</h4><p>중등(중1~중3)이 가장 무난합니다. 영어 습득력이 좋고 고교 내신 전이라 부담이 적습니다. 초등은 모국어·정체성 공백을 고려해 캠프 위주로, 고등은 미국·캐나다가 GPA가 4년 누적돼 준비 없이 가면 성적이 대입에 그대로 남으므로 가장 신중해야 합니다.</p></div>
+            <div class="faq-item"><h4>영어를 못하는데 유학 보내도 될까요?</h4><p>캠프(2~3주)는 완벽한 영어가 전제는 아니지만, 리스닝이 되어야 아이가 위축되지 않습니다. 반면 단기·조기유학은 다릅니다. 현지 학교는 모든 과목을 에세이로 평가하며, 캐나다는 레벨 테스트로 ESL 단계가 정해져 졸업 시기까지 영향을 줍니다. 출발 전 6개월은 준비하시길 권합니다.</p></div>
+            <div class="faq-item"><h4>귀국(리터니) 후 영어를 어떻게 유지하나요?</h4><p>사용하지 않으면 생각보다 빠르게 잊습니다. 주 2~3회 프리토킹으로 꾸준히 노출시키는 것이 가장 중요하며, 학년이 어릴수록 더 빨리 잊기 때문에 관리가 필요합니다.</p></div>
+            <div class="faq-item"><h4>유학 다녀오면 한국 대학은 어떻게 가나요?</h4><p>재외국민 특례입학(정원 외 특별전형)이라는 경로가 있습니다. 수능 없이 지원하며 서류·필기(국어·영어·수학)·면접으로 선발합니다. 다만 몇 년 특례냐(3년/12년)에 따라 자격이 달라, 출국·귀국 시점을 정하기 전에 반드시 계산해야 합니다.</p></div>
+
+            <div class="cta-box" style="margin-top: 2rem;">
+                <h3>유학·캠프 상담이 필요하신가요?</h3>
+                <p>아이 학년과 상황에 맞는 유학 방식을 함께 찾아드립니다.</p>
+                <div class="btn-group" style="margin-top: 1.5rem;">
+                    <a href="tel:010-2069-1741" class="btn btn-white">📞 010-2069-1741</a>
+                    <a href="https://open.kakao.com/o/sjuonfCi" target="_blank" class="btn btn-dark">💬 카카오 상담</a>
                 </div>
             </div>
         </div>
