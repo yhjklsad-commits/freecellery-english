@@ -477,6 +477,78 @@
         .faq-item { border-bottom: 1px solid #eee; padding: 1.1rem 0; }
         .faq-item h4 { color: #d4880a; margin-bottom: 0.5rem; font-size: 15px; }
         .faq-item h4::before { content: "Q. "; color: #F5A623; }
+
+        /* Program circle buttons */
+        .program-circle-wrap { background: #1a1a2e; border-radius: 20px; padding: 2.5rem 1.5rem; margin-bottom: 2rem; }
+        .program-circle-wrap > h3 { color: white; text-align: center; margin-bottom: 0.5rem; }
+        .program-circle-wrap > p { color: #aaa; text-align: center; margin-bottom: 2rem; }
+        .program-circle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+        .program-circle { text-align: center; }
+        .program-circle summary {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 28%, #ffb066, #F5A623 65%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            cursor: pointer;
+            padding: 1rem;
+            box-shadow: 0 8px 20px rgba(245,166,35,0.35);
+            list-style: none;
+            transition: transform 0.25s;
+        }
+        .program-circle summary::-webkit-details-marker { display: none; }
+        .program-circle summary:hover { transform: translateY(-4px) scale(1.03); }
+        .program-circle .p-title { font-weight: 800; font-size: 14px; line-height: 1.3; }
+        .program-circle .p-sub { font-size: 9px; opacity: 0.85; letter-spacing: 0.5px; margin-top: 2px; }
+        .program-circle .p-more { margin-top: 8px; background: rgba(0,0,0,0.18); border-radius: 12px; padding: 3px 12px; font-size: 11px; font-weight: 700; }
+        .program-circle[open] summary { background: radial-gradient(circle at 32% 28%, #ffd18a, #d4880a 65%); }
+        .program-detail {
+            background: white;
+            border: 2px solid #F5A623;
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            text-align: left;
+        }
+        .program-detail h4 { color: #1a1a2e; margin-bottom: 0.6rem; }
+        .program-detail p { color: #555; margin-bottom: 1rem; }
+
+        /* Learning process flow */
+        .process-flow-wrap { margin-bottom: 2rem; }
+        .process-phase { display: flex; align-items: stretch; gap: 1rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+        .process-steps { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; min-width: 200px; }
+        .process-step {
+            color: white;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .process-step .en { display: block; font-size: 15px; }
+        .process-step .ko { display: block; font-size: 12px; font-weight: 500; opacity: 0.9; }
+        .process-phase.base .process-step { background: linear-gradient(90deg, #2a5298, #1e3c72); }
+        .process-phase.build .process-step { background: linear-gradient(90deg, #16a085, #0d6b58); }
+        .process-phase.apply .process-step { background: linear-gradient(90deg, #F5A623, #d4880a); }
+        .process-result {
+            flex: 0 0 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 12px;
+            padding: 1rem;
+            background: #f7f7f7;
+        }
+        .process-result strong { display: block; font-size: 17px; color: #1a1a2e; margin-bottom: 0.3rem; }
+        .process-result span { font-size: 12px; color: #777; }
+        @media (max-width: 640px) {
+            .process-result { flex-basis: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -608,17 +680,118 @@
                 </div>
             </div>
 
-            <h3 style="margin-top: 2.5rem;">성인 프로그램 한눈에 보기</h3>
-            <div class="grid">
-                <div class="card"><h3>💼 직장인 토익과외</h3><p>출퇴근 전후 시간 활용, 목표 점수까지 단기 집중 관리</p></div>
-                <div class="card"><h3>🗣️ 토스(TOEIC Speaking)</h3><p>실전 스피킹 시험 유형별 반복 훈련</p></div>
-                <div class="card"><h3>📝 아이엘츠(IELTS)</h3><p>유학·이민 목적 아카데믹/제너럴 모듈 준비</p></div>
-                <div class="card"><h3>📊 비즈니스 영어</h3><p>이메일·회의·프레젠테이션 등 실무 표현 집중</p></div>
-                <div class="card"><h3>🎓 대학생영어과외</h3><p>취업·교환학생 준비, 토익·인터뷰 영어</p></div>
-                <div class="card"><h3>🌍 외국인 원어민과외</h3><p>원어민 선생님과 1:1로 실전 회화 연습</p></div>
-                <div class="card"><h3>💬 프리토킹·일상영어</h3><p>부담 없는 자유주제 대화로 말하기 습관 만들기</p></div>
-                <div class="card"><h3>🔤 기초 생활영어</h3><p>왕초보부터 차근차근, 일상에서 바로 쓰는 표현</p></div>
-                <div class="card"><h3>🇯🇵 일본어회화</h3><p>왕초보부터 일상회화까지 1:1로 진행</p></div>
+            <div class="program-circle-wrap">
+                <h3>성인 프로그램 한눈에 보기</h3>
+                <p>원하는 프로그램을 눌러 자세한 내용을 확인하세요</p>
+                <div class="program-circle-grid">
+                    <details class="program-circle">
+                        <summary><span class="p-title">기초영어</span><span class="p-sub">BASIC ENGLISH</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🔤 기초영어 (BASIC ENGLISH)</h4>
+                            <p>왕초보부터 차근차근 — 일상에서 바로 쓰는 <strong>기초 생활영어</strong> 표현을 1:1로 익힙니다. 문법을 먼저 외우기보다 상황별 표현을 몸에 익히는 방식으로 진행합니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">1:1 맞춤<br>영어회화</span><span class="p-sub">PERSONAL PROGRAM</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🌍 1:1 맞춤 영어회화 (PERSONAL PROGRAM)</h4>
+                            <p><strong>외국인 원어민과외</strong>부터 <strong>프리토킹·일상영어</strong>까지, 학생 수준과 목표에 맞춰 커리큘럼과 속도를 100% 맞춤 설계합니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">영어 면접<br>대비</span><span class="p-sub">INTERVIEW PREP</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🎤 영어 면접 대비 (INTERVIEW PREP)</h4>
+                            <p>취업·입학·유학 인터뷰를 앞두고 계신가요? 예상 질문 리스트로 반복 연습하고, 모의 면접 후 즉각 피드백을 드립니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">비즈니스<br>영어</span><span class="p-sub">BUSINESS ENGLISH</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>📊 비즈니스 영어 (BUSINESS ENGLISH)</h4>
+                            <p>이메일·화상회의·프레젠테이션 등 실무에서 바로 쓰는 표현을 집중적으로 훈련합니다. 해외 바이어 응대가 잦은 직장인에게 추천합니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">아이엘츠<br>스피킹</span><span class="p-sub">IELTS SPEAKING</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>📝 아이엘츠 스피킹 (IELTS SPEAKING)</h4>
+                            <p>유학·이민 목적의 <strong>아이엘츠</strong> 스피킹 파트를 실전 문제 유형별로 반복 훈련하고, 목표 밴드 점수에 맞춘 표현·구조를 함께 다집니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">오픽 시험<br>대비</span><span class="p-sub">OPIC TEST</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🎯 오픽 시험 대비 (OPIC TEST)</h4>
+                            <p>취업 스펙으로 많이 찾는 오픽(OPIc), 콤보셋 답변 구조와 돌발 질문 대응까지 실전 감각을 키워드립니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">토익<br>스피킹</span><span class="p-sub">TOEIC SPEAKING</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🗣️ 토익 스피킹 (TOEIC SPEAKING · 토스)</h4>
+                            <p><strong>토스(TOEIC Speaking)</strong> 실전 문제 유형별 반복 훈련으로, 정해진 시간 안에 논리적으로 답변하는 연습을 집중적으로 진행합니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">직장인<br>토익과외</span><span class="p-sub">TOEIC</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>💼 직장인 토익과외 (TOEIC)</h4>
+                            <p>출퇴근 전후 시간에 맞춰 <strong>일대일과외</strong>로 진행합니다. 목표 점수와 남은 기간에 맞춰 단기 집중 커리큘럼을 짜드립니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">대학생<br>영어과외</span><span class="p-sub">COLLEGE ENGLISH</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🎓 대학생영어과외 (COLLEGE ENGLISH)</h4>
+                            <p>취업·교환학생 준비에 필요한 토익·인터뷰 영어를 <strong>대학생영어과외</strong>로 집중 관리해 드립니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                    <details class="program-circle">
+                        <summary><span class="p-title">일본어<br>회화</span><span class="p-sub">JAPANESE</span><span class="p-more">자세히보기</span></summary>
+                        <div class="program-detail">
+                            <h4>🇯🇵 일본어회화 (JAPANESE)</h4>
+                            <p>왕초보부터 일상회화까지, <strong>일본어회화</strong>도 영어와 동일하게 1:1 맞춤으로 진행합니다.</p>
+                            <div class="btn-group"><a href="https://naver.me/5Z1fPkTC" target="_blank" class="btn btn-dark">📋 무료 테스트 신청하기</a><a href="tel:010-2069-1741" class="btn btn-white" style="border:1px solid #eee;">📞 010-2069-1741</a></div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <h2 style="text-align: center;">프리셀리만의 학습 프로세스</h2>
+            <p style="text-align: center; color: #666;">암기가 아니라 "몸에 익히는" 7단계로 진행합니다.</p>
+            <div class="process-flow-wrap">
+                <div class="process-phase base">
+                    <div class="process-steps">
+                        <div class="process-step"><span class="en">① Speak-out</span><span class="ko">소리 튜닝 — 원어민 발음·억양 먼저 듣고 따라하기</span></div>
+                        <div class="process-step"><span class="en">② Vocabulary</span><span class="ko">핵심 어휘 — 상황별 필수 표현 입력</span></div>
+                    </div>
+                    <div class="process-result"><strong>기본기 장착</strong><span>Base</span></div>
+                </div>
+                <div class="process-phase build">
+                    <div class="process-steps">
+                        <div class="process-step"><span class="en">③ Expression</span><span class="ko">표현 체득 — 배운 표현을 내 것으로 체화</span></div>
+                        <div class="process-step"><span class="en">④ Comprehending</span><span class="ko">내용 이해 — 문맥 속에서 정확히 이해</span></div>
+                        <div class="process-step"><span class="en">⑤ Rephrasing</span><span class="ko">문장 응용·확장 — 배운 표현을 내 문장으로</span></div>
+                    </div>
+                    <div class="process-result"><strong>문장력 확장</strong><span>Build</span></div>
+                </div>
+                <div class="process-phase apply">
+                    <div class="process-steps">
+                        <div class="process-step"><span class="en">⑥ Discussion</span><span class="ko">심층 토론 — 주제 토론과 논쟁이 가능한 수준으로</span></div>
+                        <div class="process-step"><span class="en">⑦ Wrap-up</span><span class="ko">최종 피드백 — 매 수업 학습 리포트 제공</span></div>
+                    </div>
+                    <div class="process-result"><strong>실전력 완성</strong><span>Apply</span></div>
+                </div>
             </div>
 
             <div class="cta-box">
