@@ -139,5 +139,14 @@
         <p style="margin-top: 1rem; font-size: 12px;">© 2026 프리셀리 영어회화. All rights reserved.</p>
     </footer>
 
+    <script>
+    function switchInnerTab(event, tabId, groupId) {
+        const group = document.getElementById(groupId);
+        group.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+        group.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    }
+    </script>
 </body>
 </html>
